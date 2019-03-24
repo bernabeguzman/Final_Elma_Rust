@@ -19,3 +19,60 @@ Finished step 1, and step 2 to research and create rust project using docker.
 Next I will begin porting all the elma c++ code to rust and creat a test environment
 What may be challenging is creating docs and tests for the rust language I will
 have to learn what king of libraries are out there and how to used them. 
+
+Getting the code
+===
+```bash
+git clone https://github.com/bernabeguzman/Final_Elma_Rust
+```
+
+Building and starting the Docker Image
+===
+```bash
+cd Final_Elma_Rust
+docker build -t hack .
+docker run ti -v $PWD/Final_Elma_Rust:/src/ hack
+```
+The build may take up several minutes.
+
+Creating a new project using cargo 
+===
+```bash
+cargo new ELMA_Rust2
+```
+
+Compile the project 
+===
+```bash
+cd ELMA_Rust1
+cargo build 
+cargo run
+```
+
+Creating documentation
+===
+```bash
+cargo doc
+```
+To get a new documents directory use the following command
+```bash
+cargo new doc
+```
+
+Clean up the project 
+===
+```bash
+cargo clean
+```
+
+Running test files 
+===
+```bash
+cargo test 
+```
+If you would like to see console println! comments use
+```bash
+cargo test -- --nocapture
+```
+
+No makefile needed using cargo framework for rust 
