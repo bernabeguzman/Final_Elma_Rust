@@ -30,9 +30,9 @@ cd Final_Elma_Rust
 docker build -t hack .
 docker run ti -v $PWD/Final_Elma_Rust:/src/ hack
 ```
-command for running work for me on windows:
+this command for running worked for me on windows:
 ```bash
-docker run ti -v $PWD/Final_Elma_Rust:/src/ hack
+docker run -ti -v C:\Users\berna\Documents\GitHub\Final_Proj:/src/ hack
 ```
 
 Steps for compiling and running code and test cases.
