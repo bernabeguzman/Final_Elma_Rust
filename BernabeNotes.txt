@@ -1,0 +1,35 @@
+Project start from GitHub Repo
+https://github.com/TomasTomecek/rust-container
+Reference on rust cargo testing
+https://doc.rust-lang.org/1.4.0/book/testing.html
+https://locka99.gitbooks.io/a-guide-to-porting-c-to-rust/
+https://stevedonovan.github.io/rust-gentle-intro
+
+
+Rust Code Version 1.33.0
+
+Step 1. Build Container
+C:\Users\berna\Documents\GitHub\FinalProj>docker build -t .
+	or
+C:\Users\berna\Documents\GitHub\FinalProj>docker build -t hack .
+Step 2. 
+C:\Users\berna\Documents\GitHub\FinalProj>docker run -ti -v C:\Users\berna\Documents\GitHub\Final_Proj:/src/ hack
+Step 3. 
+cd ELMA_Rust 
+Step 4. 
+rustc ./main.rs
+Step 5. 
+./main
+
+Step 6. make cargo project
+cargo init --bin
+	or 
+cargo new ELMA_Rust1
+Step 7. cargo test  
+cargo test
+
+cargo test -- --nocapture
+cargo run 
+cargo build 
+cargo clean 
+cargo release
