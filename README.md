@@ -1,4 +1,4 @@
-# Rust_ELMA ELMA running on Rust Language
+# ELMA running on Rust Language
 
 Project Goals:
 -- Create an ELMA project running On Rust Language
