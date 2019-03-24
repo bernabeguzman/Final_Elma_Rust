@@ -22,19 +22,25 @@ have to learn what king of libraries are out there and how to used them.
 
 Testing Elma Code
 ===
-Getting the code
+Steps for getting code, building container, and running the container.
 ---
 ```bash
 git clone https://github.com/bernabeguzman/Final_Elma_Rust
+cd Final_Elma_Rust
+docker build -t hack .
+docker run ti -v $PWD/Final_Elma_Rust:/src/ hack
 ```
-Getting the code
+Steps for compiling and running code and test cases.
 ---
 ```bash
-git clone https://github.com/bernabeguzman/Final_Elma_Rust
+cd ELMA_Rust1
+cargo test -- --nocapture
 ```
 
-Building and starting the Docker Image
+Docker with Rust and Cargo Features
 ===
+Building and starting the Docker Image
+---
 ```bash
 cd Final_Elma_Rust
 docker build -t hack .
@@ -43,13 +49,13 @@ docker run ti -v $PWD/Final_Elma_Rust:/src/ hack
 The build may take up several minutes.
 
 Creating a new project using cargo 
-===
+---
 ```bash
 cargo new ELMA_Rust2
 ```
 
 Compile the current project 
-===
+---
 ```bash
 cd ELMA_Rust1
 cargo build 
@@ -57,7 +63,7 @@ cargo run
 ```
 
 Creating documentation
-===
+---
 ```bash
 cargo doc
 ```
@@ -67,13 +73,13 @@ cargo new doc
 ```
 
 Clean up the project 
-===
+---
 ```bash
 cargo clean
 ```
 
 Running test files 
-===
+---
 ```bash
 cargo test 
 ```
