@@ -20,8 +20,15 @@ Next I will begin porting all the elma c++ code to rust and creat a test environ
 What may be challenging is creating docs and tests for the rust language I will
 have to learn what king of libraries are out there and how to used them. 
 
-Getting the code
+Testing Elma Code
 ===
+Getting the code
+---
+```bash
+git clone https://github.com/bernabeguzman/Final_Elma_Rust
+```
+Getting the code
+---
 ```bash
 git clone https://github.com/bernabeguzman/Final_Elma_Rust
 ```
@@ -41,7 +48,7 @@ Creating a new project using cargo
 cargo new ELMA_Rust2
 ```
 
-Compile the project 
+Compile the current project 
 ===
 ```bash
 cd ELMA_Rust1
