@@ -1,0 +1,10 @@
+[package]
+name = "ELMA_Rust1"
+version = "0.1.0"
+authors = ["Bernabe Guzman ECE590 Final"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1.0"
+queues = "1.0.0"
+throw = "0.1"
